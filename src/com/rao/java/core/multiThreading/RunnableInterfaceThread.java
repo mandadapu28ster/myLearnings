@@ -1,6 +1,5 @@
 package com.rao.java.core.multiThreading;
 
-import coreJava.inheritance.need;
 
 public class RunnableInterfaceThread {
 
@@ -10,4 +9,4 @@ public class RunnableInterfaceThread {
 	}
 
 }
-need to write
+//need to write

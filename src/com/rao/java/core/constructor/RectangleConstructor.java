@@ -1,5 +1,4 @@
 package com.rao.java.core.constructor;
-import coreJava.classMethods.*;
 
 public class RectangleConstructor {
 	public static int leanth, breath;

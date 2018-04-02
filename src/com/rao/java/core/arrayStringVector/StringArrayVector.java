@@ -1,6 +1,5 @@
 package com.rao.java.core.arrayStringVector;
 
-import coreJava.inheritance.need;
 
 //this demonstrates vector to string and array printing concept
 
@@ -12,4 +11,4 @@ public class StringArrayVector {
 	}
 
 }
-need to write
+//need to write

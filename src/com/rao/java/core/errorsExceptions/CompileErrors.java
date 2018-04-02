@@ -1,6 +1,6 @@
 package com.rao.java.core.errorsExceptions;
 
-import coreJava.inheritance.need;
+
 
 public class CompileErrors {
 
@@ -10,4 +10,4 @@ public class CompileErrors {
 	}
 
 }
-need to write
+//need to write

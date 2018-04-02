@@ -1,13 +1,13 @@
 package com.rao.java.core.constructor;
 
-import coreJava.classMethods.*;
+import com.rao.java.core.classMethods.*;
 
 public class ConstructorExample {
 
 	public static void main(String[] args) {
 		// without constructor
-		Rectangle rect1= new Rectangle();
-		rect1.getData(10,2);
+        Triangle rect1= new Triangle();
+		rect1.setData(10,2);
 		System.out.println(rect1.area());
 		
 		//with constructor

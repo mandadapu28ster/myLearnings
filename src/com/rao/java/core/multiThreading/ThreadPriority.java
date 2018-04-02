@@ -1,6 +1,6 @@
 package com.rao.java.core.multiThreading;
 
-import coreJava.inheritance.need;
+
 
 public class ThreadPriority {
 
@@ -10,4 +10,4 @@ public class ThreadPriority {
 	}
 
 }
-need to write
+//need to write

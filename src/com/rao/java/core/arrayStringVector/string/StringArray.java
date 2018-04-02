@@ -1,6 +1,6 @@
 package com.rao.java.core.arrayStringVector.string;
 
-import coreJava.inheritance.need;
+
 
 public class StringArray {
 
@@ -10,4 +10,4 @@ public class StringArray {
 	}
 
 }
-need to write
+//need to write

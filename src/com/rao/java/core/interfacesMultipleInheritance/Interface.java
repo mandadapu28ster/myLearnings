@@ -8,4 +8,4 @@ public class Interface {
 	}
 
 }
-write
+//write
