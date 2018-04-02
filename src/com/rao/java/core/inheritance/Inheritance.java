@@ -1,6 +1,6 @@
 package com.rao.java.core.inheritance;
 
-import coreJava.constructor.RectangleConstructor;
+import com.rao.java.core.constructor.RectangleConstructor;
 
 public class Inheritance extends RectangleConstructor {
 	
