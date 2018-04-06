@@ -55,21 +55,26 @@ public class DataHoldingCapacity {
         double JKL2= GHI2*GHI2;
 
         double JKL3=2.3e8;
-        double JKL4= jkl*jkl;
+        double JKL4= JKL3*JKL3;
 
         /**
-         * Operation proves double declaration capability to hold the scientific numbers and truncation with type casting
+         * Operation proves float/double declaration capability to hold the scientific numbers and truncation with type casting
          */
         float MNO=mno*mno;
         double onm=2.323e1;
         double MNO1=onm*onm;
         double OMN=mno*mno;
 
+        double PQR=pqr*pqr;
+        pqr=23.00023e3;
+        double PQR1=pqr*pqr;
+
         System.out.println("Below is actual     VS                    expected");
-        System.out.println("byte operation ==>  "+vwx+"         expected with short is ===>"+xwv);
-        System.out.println("short operation ==> "+xwv1+"        expected with int is ===>"+GHI);
-        System.out.println("int operation ==>   "+GHI1+"        with long ===>"+JKL+" but expected is (as double scientific)===> "+JKL2);
+        System.out.println("byte operation ==>  "+vwx+"         expected with short is ===> "+xwv);
+        System.out.println("short operation ==> "+xwv1+"        expected with int is ===>   "+GHI);
+        System.out.println("int operation ==>   "+GHI1+"        with long ===>"+JKL+" but expected is (as double scientific)===>     "+JKL2);
         System.out.println("long operation ==>  "+JKL1+"        expected as with double operation is ===>"+JKL4);
-        System.out.println("float operation ==> "+MNO+"         expected with scientific double is "+MNO1+" with double auto casting"+OMN);
+        System.out.println("float operation ==> "+MNO+"         expected with scientific double is "+MNO1+" with double auto casting    "+OMN);
+        System.out.println("double operation ==>  "+PQR+"       expected with double scintific operation is ===>"+PQR1);
     }
 }
