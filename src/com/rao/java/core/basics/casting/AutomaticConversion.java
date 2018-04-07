@@ -23,6 +23,23 @@ public class AutomaticConversion {
         char stu; // holds 16-bit numbers to give coverage for Unicode (http://www.unicode.org.)
         boolean vwx; //Java reserves one byte for a boolean datatype, but it uses only one bit. Clearly, it is virtual machine dependent. try booleanMagic class
 
+//        int a=10000;
+//        byte b;
+//        b = (byte) a;
+//        System.out.println("b is " + b);
+
+        int i = 257;
+        byte b;
+        double d = 323.142;
+        System.out.println("\nConversion of int to byte.");
+        b = (byte) i;
+        System.out.println("i and b " + i + " " + b);
+        System.out.println("\nConversion of double to int.");
+        i = (int) d;
+        System.out.println("d and i " + d + " " + i);
+        System.out.println("\nConversion of double to byte.");
+        b = (byte) d;
+        System.out.println("d and b " + d + " " + b);
 
     }
 }
