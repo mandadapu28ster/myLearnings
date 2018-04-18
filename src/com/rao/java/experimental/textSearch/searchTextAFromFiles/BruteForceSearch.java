@@ -1,4 +1,4 @@
-package com.rao.java.experimental.SearchTextAFromFiles;
+package com.rao.java.experimental.textSearch.searchTextAFromFiles;
 
 import java.io.*;
 import java.util.HashMap;

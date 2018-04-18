@@ -1,4 +1,4 @@
-package com.rao.java.experimental;
+package com.rao.java.experimental.textSearch;
 
 /**
  * This class will work for both text and pdf files, it will search for specific content which is available in files.

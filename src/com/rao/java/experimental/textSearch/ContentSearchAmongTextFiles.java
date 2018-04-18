@@ -1,4 +1,4 @@
-package com.rao.java.experimental;
+package com.rao.java.experimental.textSearch;
 
 /**
  * This class will work for text, it will search for specific content which is available in files.
