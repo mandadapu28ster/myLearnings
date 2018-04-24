@@ -32,23 +32,39 @@ public class Triangle{
 	}
 
     /**
-     * Constructors def
+     * defining Constructors
      * @param x
      * @param y
      */
-	Triangle(double x,double y){                                //Method 4
+	Triangle(double x,double y){                                    //Method 4;
         System.out.println("Constructor called");
 	    height=x;
 	    base=y;
     }
 
-    Triangle(double x){                                         //Method 5
+    Triangle(double x){                                         //Method 5; advancedMethods method overwriting
         System.out.println("Constructor called");
         height=base=x;
     }
 
-    Triangle(){                                                 //Method 6;default constructor, to avoid any mismatch with existing definitions of class
-        System.out.println("Constructor called");
+    public Triangle(){                                                 //Method 6;default advancedMethods, to avoid any mismatch with existing definitions of class
+        System.out.println("Constructor called");                       //Make it public to be used in other packages.
 	    height=base=0;
+    }
+
+    Triangle(Triangle triangle){                                         //Method 7; advancedMethods method overwriting to copy an object
+        System.out.println("Constructor called");
+        height=triangle.height;
+        base=triangle.base;
+    }
+
+    protected void finalize( ) {                        //Please identify final key word also
+        // finalization code here;before garbage collection this method will execute
+        //We don't have any controll when finalize method executes
+
+        final int OPEN = 1;                             //its coding convention to use all upper case for final
+        final int CLOSE = 2;
+
+        System.out.println("Garbage collection performed.");
     }
 }

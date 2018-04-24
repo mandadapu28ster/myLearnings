@@ -1,12 +1,12 @@
 package com.rao.java.core.inheritance;
 
-import com.rao.java.core.constructor.RectangleConstructor;
+import com.rao.java.core.classMethods.advancedMethods.RectangleConstructor;
 
 public class Inheritance extends RectangleConstructor {
 	
 	public static int height;
 	
-	//sub class constructor
+	//sub class advancedMethods
 	Inheritance(int x,int y, int z) {
 		//super method should be in first line, if needed
 		super(x,y);
