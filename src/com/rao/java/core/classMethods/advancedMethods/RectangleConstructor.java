@@ -4,7 +4,7 @@ public class RectangleConstructor {
 	public static int leanth, breath;
 	
 	//protected added for Inheritance example
-	//Same expample is portrayed in triangle class in classMethods package also. this redundant, kept for isolated advancedMethods learning
+	//Same expample is portrayed in triangle class in classMethods package also. this is redundant, kept for isolated advancedMethods learning
 
 	protected RectangleConstructor(int x,int y)
 	{
