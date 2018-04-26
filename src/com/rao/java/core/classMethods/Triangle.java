@@ -63,7 +63,7 @@ public class Triangle{
         //We don't have any controll when finalize method executes
 
         final int OPEN = 1;                             //its coding convention to use all upper case for final
-        final int CLOSE = 2;
+        final int CLOSE = 2;                            //defining constant values
 
         System.out.println("Garbage collection performed.");
     }
