@@ -21,6 +21,14 @@ public class SimpleInheritence {
         System.out.println("=====================");
         System.out.println("Sum of i and k in subOb:");
         subOb.sum();
+
+        //example to use super as this
+        System.out.println("\n==Super as this==");
+        C subOc = new C(7,8);
+        subOc.i=9;
+        subOc.showAi();
+        subOc.showCi();
+        subOc.showij();
     }
 }
 // Create a superclass.
@@ -41,7 +49,7 @@ class A {
 class B extends A {
     int k;
     public B(int i, int j) {
-        super(i, j);
+        super(i, j);                            //Usage example to super; it call super class constructor and intializes hidden/private members
     }
 
     void showk() {
@@ -50,5 +58,23 @@ class B extends A {
     void sum() {
 
         System.out.println("i+k: " + (i+k));    //you can't use j for processing
+    }
+}
+class C extends A {
+    int i;                                         //We have i in both super class (A) and sub class (C)
+    public C(int i, int j) {
+        super(i, j);                            //Usage example to super; it call super class constructor and initializes hidden/private members
+    }
+
+    void showAi() {
+        System.out.println("i in A: " + super.i);
+    }
+    void showCi() {
+
+        System.out.println("i in C: " + i);
+    }
+    void showij() {                                     //if we avoid super here, it will be example for method overriding
+        System.out.println("using super as this for method");
+        super.showij();                                 //Using super as this for super class method calling
     }
 }

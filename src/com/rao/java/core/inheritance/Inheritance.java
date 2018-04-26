@@ -4,7 +4,7 @@ import com.rao.java.core.classMethods.advancedMethods.RectangleConstructor;
 
 public class Inheritance extends RectangleConstructor {
 	
-	public static int height;
+	static int height;
 	
 	//sub class advancedMethods
 	Inheritance(int x,int y, int z) {
