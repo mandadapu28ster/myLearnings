@@ -1,0 +1,34 @@
+Java does not support the multiple inheritance of classes.
+Now that an interface can include default methods, you might be wondering if an interface can provide a way around this restriction.
+The answer is, essentially, no.
+Recall that there is still a key difference between a class and an interface: a class can maintain state information (especially through the use of instance variables), but an interface cannot.
+
+The preceding notwithstanding, default methods do offer a bit of what one would normally associate with the concept of multiple inheritance.
+For example, you might have a class that implements two interfaces.
+If each of these interfaces provides default methods, then some behavior is inherited from both.
+Thus, to a limited extent, default methods do support multiple inheritance of behavior.
+As you might guess, in such a situation, it is possible that a name conflict will occur.
+
+For example,
+assume that two interfaces called Alpha and Beta are implemented by a class called MyClass.
+What happens if both Alpha and Beta provide a method called reset( ) for which both declare a default implementation?
+Is the version by Alpha or the version by Beta used by MyClass? Or, consider a situation in which Beta extends Alpha.
+Which version of the default method is used? Or, what if MyClass provides its own implementation of the method?
+To handle these and other similar types of situations, Java defines a set of rules that resolves such conflicts.
+
+First, in all cases, a class implementation takes priority over an interface default implementation.
+Thus, if MyClass provides an override of the reset( ) default method, MyClass’ version is used.
+This is the case even if MyClass implements both Alpha and Beta.
+In this case, both defaults are overridden by MyClass’ implementation.
+
+Second, in cases in which a class implements two interfaces that both have the same default method, but the class does not override that method, then an error will result.
+Continuing with the example, if MyClass implements both Alpha and Beta, but does not override reset( ), then an error will occur.
+
+In cases in which one interface inherits another, with both defining a common default method, the inheriting interface’s version of the method takes precedence.
+Therefore, continuing the example, if Beta extends Alpha, then Beta’s version of reset( ) will be used.
+
+It is possible to explicitly refer to a default implementation in an inherited interface by using a new form of super.
+Its general form is shown here:
+InterfaceName.super.methodName( )
+For example, if Beta wants to refer to Alpha’s default for reset( ), it can use this statement:
+Alpha.super.reset();
