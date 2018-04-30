@@ -9,6 +9,10 @@ public class InterfaceAdvanced2 {
         ob.meth2();
         ob.meth3();
         C.meth5();          //static method calling convention same as static method(s) in class
+
+        //Can a main() method of class be invoked in another class in java ??
+        String[] arguments = new String[] {"123"};
+        InterfaceAdvanced.main(arguments);
     }
 }
 
