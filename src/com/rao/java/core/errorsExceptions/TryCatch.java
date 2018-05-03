@@ -17,9 +17,9 @@ public class TryCatch {
 //			System.out.println("Generic Exception " + e);			//This will catch all exception and makes below 2 exceptions not reachable
 //		}
 			catch (ArithmeticException e) { 						// catch divide-by-zero error
-			System.out.println("Exception: " + e);				// usefull for debug
+			System.out.println("Exception: " + e);					// usefull for debug
 			System.out.println("Division by zero.");
-		} catch(ArrayIndexOutOfBoundsException e) {
+		} catch(ArrayIndexOutOfBoundsException e) {					//Thsi is also example for nested catch; We can give similar for try as well
 			System.out.println("Array index oob: " + e);
 		}
 		System.out.println("After try/catch blocks.");
