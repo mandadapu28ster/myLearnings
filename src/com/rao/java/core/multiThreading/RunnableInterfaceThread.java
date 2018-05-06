@@ -4,6 +4,9 @@ package com.rao.java.core.multiThreading;
 public class RunnableInterfaceThread {
 
 	public static void main(String args[ ] ) {
+		/**
+		 * If we want multiple threads call below command as many times as we want :)
+		 */
 		new NewThread(); // create a new thread
 		try {
 			for(int i = 5; i > 0; i--) {
@@ -18,7 +21,7 @@ public class RunnableInterfaceThread {
 
 }
 
-class NewThread implements Runnable {			//observe class def
+class NewThread implements Runnable {			//observe class def as "implements" (as interface)
 	Thread t;
 
 	NewThread() {

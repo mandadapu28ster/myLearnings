@@ -3,7 +3,7 @@ package com.rao.java.core.multiThreading;
 
 public class SingleThread {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {			//main as thread
 		Thread t = Thread.currentThread();
 		System.out.println("Current thread: " + t);
 
