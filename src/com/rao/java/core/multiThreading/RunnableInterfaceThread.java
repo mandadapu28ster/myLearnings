@@ -31,6 +31,14 @@ class NewThread implements Runnable {			//observe class def as "implements" (as 
 		t.start(); // Start the thread
 	}
 
+	//Another constructor for variation coverage
+
+	NewThread(String threadname) {
+		t = new Thread(this, threadname);
+		System.out.println("New thread: " + t);
+		t.start(); // Start the thread
+	}
+
 	// This is the entry point for the second thread.
 	public void run() {
 		try {
