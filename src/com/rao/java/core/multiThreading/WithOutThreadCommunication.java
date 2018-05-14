@@ -1,7 +1,7 @@
 package com.rao.java.core.multiThreading;
 
 
-// An incorrect implementation of a producer and consumer.
+// An incorrect implementation of a producer and consumer. communication without efficiency
 class QQ {
     int n;
     synchronized int get() {
