@@ -29,6 +29,9 @@ class NewThread implements Runnable {			//observe class def as "implements" (as 
 		t = new Thread(this, "Demo Thread");
 		System.out.println("Child thread: " + t);
 		t.start(); // Start the thread
+
+		//To know status
+		System.out.println("Thread status"+t.getState());
 	}
 
 	//Another constructor for variation coverage
@@ -37,6 +40,8 @@ class NewThread implements Runnable {			//observe class def as "implements" (as 
 		t = new Thread(this, threadname);
 		System.out.println("New thread: " + t);
 		t.start(); // Start the thread
+		//To know status
+		System.out.println("Thread status"+t.getState());
 	}
 
 	// This is the entry point for the second thread.
