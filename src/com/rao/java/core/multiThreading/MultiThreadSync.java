@@ -8,7 +8,7 @@ public class MultiThreadSync {
 		NewThread ob2 = new NewThread("Two");
 		NewThread ob3 = new NewThread("Three");
 		/**
-		 * isAlive is way to knoe thread status
+		 * isAlive is way to know thread status
 		 */
 		System.out.println("Thread One is alive: "
 				+ ob1.t.isAlive());
