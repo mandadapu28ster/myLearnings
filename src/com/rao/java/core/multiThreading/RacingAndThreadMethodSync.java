@@ -38,6 +38,14 @@ class Caller implements Runnable {
          *  Add 'synchronized' before method calling via object; second way of achieving sync
          */
 
+        /**
+         * Imagine that you want to synchronize access to objects of a class that was not designed for multithreaded access.
+         * That is, the class does not use synchronized methods. Further, this class was not created by you, but by a third party,
+         * and you do not have access to the source code. Thus, you can’t add synchronized to the appropriate methods within the class.
+         * How can access to an object of this class be synchronized? Fortunately, the solution to this problem is quite easy:
+         * You simply put calls to the methods defined by this class inside a synchronized block.
+         */
+
 //        synchronized(target) { // synchronized block
 //            target.call(msg);
 //        }
