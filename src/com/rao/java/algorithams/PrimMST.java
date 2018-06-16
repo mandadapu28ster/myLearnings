@@ -96,14 +96,16 @@ class MST
 
     public static void main (String[] args)
     {
-        /* Let us create the following graph
-           2    3
-        (0)--(1)--(2)
-        |    / \   |
-        6| 8/   \5 |7
-        | /      \ |
-        (3)-------(4)
-             9          */
+        /** Let us create the following graph
+         *
+         *            2    3
+         *         (0)--(1)--(2)
+         *         |    / \   |
+         *         6| 8/   \5 |7
+         *         | /      \ |
+         *         (3)-------(4)
+         *              9
+         */
         MST t = new MST();
         int graph[][] = new int[][] {{0, 2, 0, 6, 0},
                 {2, 0, 3, 8, 5},
