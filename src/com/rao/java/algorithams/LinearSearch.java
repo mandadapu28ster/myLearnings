@@ -1,4 +1,4 @@
-package src.com.rao.java.algorithams;
+package com.rao.java.algorithams;
 
 public class LinearSearch {
 }

@@ -1,4 +1,4 @@
-package src.com.rao.java.experimental;
+package com.rao.java.experimental;
 
 import src.com.rao.java.experimental.API.RandomPostCode;
 

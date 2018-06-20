@@ -1,4 +1,4 @@
-package src.com.rao.java.algorithams;
+package com.rao.java.algorithams;
 
 // Java program for Kruskal's algorithm to find Minimum
 // Spanning Tree of a given connected, undirected and
