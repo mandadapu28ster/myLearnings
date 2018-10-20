@@ -1,0 +1,24 @@
+1) Detect and remove loop from linked list ?
+    (Floyds slow fast pointers)
+
+    Single Linked List
+        -
+    Double Linked List
+        -
+
+2) Sorting Linked List
+    -
+
+3) Union and intersection of Linked list
+
+4) Merge Linked List
+
+5) Remove duplicates from Liked list
+    Sorted
+    Unsorted
+
+6) Reverse linked list
+
+7) Check linked list is palindrome
+
+8) Find middle of linked list
