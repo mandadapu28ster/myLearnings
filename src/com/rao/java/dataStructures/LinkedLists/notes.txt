@@ -22,3 +22,18 @@
 7) Check linked list is palindrome
 
 8) Find middle of linked list
+
+9) XOR LinkedList (memory efficient)
+
+
+Linked List types
+
+    -Single linked list
+    head-->a|A|-->b|B|-->c|C|-->null
+
+    -Double linked list
+
+    -Circular linked list
+    head-->a|A|-->b|B|-->c|C|-->
+          |                     |
+           <----------<---------

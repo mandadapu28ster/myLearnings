@@ -16,7 +16,7 @@ import java.util.HashSet;
  *
  */
 
-class LinkedListOP {
+class LinkedListOperations {
     Node head;
 
     static class Node {
@@ -184,7 +184,7 @@ class LinkedListOP {
     }
 
     public static void main(String args[])  {
-        LinkedListOP llist=new LinkedListOP();
+        LinkedListOperations llist=new LinkedListOperations();
         llist.head=new Node(1);
         Node second=new Node(3);
         Node third=new Node(4);
