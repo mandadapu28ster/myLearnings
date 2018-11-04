@@ -1,6 +1,5 @@
 package com.rao.java.algorithams;
 
-import java.lang.reflect.Array;
 import java.util.EmptyStackException;
 
 interface Stack<T>{
@@ -41,7 +40,7 @@ interface Stack<T>{
 
      public void push(T number) {
         if(this.IsFull())
-            throw new RuntimeException("Stack's storage is overflow");
+            throw new RuntimeException("StackInOut's storage is overflow");
         System.out.println(number);
         array[++top]=number;
     }
