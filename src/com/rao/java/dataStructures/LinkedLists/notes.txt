@@ -1,5 +1,5 @@
 1) Detect and remove loop from linked list ?
-    (Floyds slow fast pointers)
+    (Floyd's slow fast pointers)
 
     Single Linked List
         -

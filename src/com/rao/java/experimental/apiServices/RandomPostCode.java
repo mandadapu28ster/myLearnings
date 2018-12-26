@@ -1,4 +1,4 @@
-package src.com.rao.java.experimental.API;
+package com.rao.java.experimental.apiServices;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;

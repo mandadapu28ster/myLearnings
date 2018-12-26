@@ -1,4 +1,4 @@
-package src.com.rao.java.advanced.servlets;
+package com.rao.java.advanced.servlets;
 
 // Import required java libraries
 import javax.servlet.*;

@@ -1,4 +1,4 @@
-package src.com.rao.java.advanced.applets;
+package com.rao.java.advanced.applets;
 
 import java.awt.*;
 import java.applet.Applet;
