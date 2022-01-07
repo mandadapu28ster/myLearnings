@@ -1,6 +1,6 @@
 package com.rao.java.experimental;
 
-import src.com.rao.java.experimental.API.RandomPostCode;
+import com.rao.java.experimental.apiServices.RandomPostCode;
 
 import java.io.IOException;
 
@@ -11,7 +11,6 @@ import java.io.IOException;
 public class MainCaller {
 
     public static void main(String args[]) throws IOException {
-
         System.out.println("\n Random Post code is ====> "+ RandomPostCode.postCodeUK());
 
     }
