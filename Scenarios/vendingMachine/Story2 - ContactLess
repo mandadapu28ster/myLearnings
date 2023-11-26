@@ -1,0 +1,27 @@
+4. As a Customer, I want to be able to pay for products using contactless credit card and Apple Pay
+- The machine will debit the Customer's credit card/bank account with the value of the selected product
+
+Scenario: As a contactless customer, allowed to purchase multiple products display amount of charge
+Given snack vending machine is working as expected
+When customer present 'contactless' payment
+And customer choose to dispense snack 'one' and snack 'two'
+Then chosen to dispense selected snacks
+And verified payment method and amount available with bank successfully
+Then snack machine should release snack 'one' and display amount charged
+
+Scenario: As a contactless customer, allowed to purchase products selected or display error if purchase not successful
+Given snack vending machine is working as expected
+When customer present 'contactless' payment
+And customer choose to dispense snack 'one' and snack 'two'
+Then chosen to dispense selected snacks
+And verify payment method and amount available with bank
+When available amount in bank account less than amount displayed
+Then snack machine should display explanatory message and abort transaction
+
+Scenario: As a contactless customer, allowed to purchase products selected or display error if payment method not honoured
+Given snack vending machine is working as expected
+When customer present 'contactless' payment
+And customer choose to dispense snack 'one' and chosen to dispense
+And verify payment method and amount available with bank
+When payment method presented is not honoured by issuing bank
+Then snack machine should display explanatory message and abort transaction

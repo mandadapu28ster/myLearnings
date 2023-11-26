@@ -1,0 +1,22 @@
+VENDING MACHINE TESTING EXERCISE
+Below is a series of User Stories that relate to an internet-connected snack vending machine. A User Story is simply a description of a product feature written from a user's point of view in language that both users and software developers can understand.
+For each Story, provide a list of test Scenarios you would run to prove that the requirements are being met. We'd prefer the Scenarios to be in Gherkin syntax (Given, When, Then), but any style you are comfortable with is acceptable.
+Also, if the Story has any ambiguities or omissions, list the questions you would ask in order to resolve them.
+1. As a Customer, I want to be able to pay for products using either British or Euro coins
+All British and Euro coins are accepted
+As coins are entered, the total credit value is updated on the display screen
+Mixed currency is not accepted; the first coin of the second currency entered does not contribute to the credit value and is returned to the Customer (with an explanatory message on the display screen)
+2. As a coin-paying Customer, I want to be able to receive more than one product in one transaction
+After a purchase, the Customer's remaining credit is displayed on screen
+The customer can either select a further item or request the credit to be returned as change
+3. As a coin-paying Customer, when I request change, the money is returned to me in the smallest number of coins possible
+When change is dispensed, it is returned in the smallest number of coins; this will depend on the amount due and the stock of coins in the machine at that time
+The customer is notified how much change was returned via the display screen
+4. As a Customer, I want to be able to pay for products using contactless credit card and Apple Pay
+The machine will debit the Customer's credit card/bank account with the value of the selected product
+5. As a Service Operative, I want the machine to notify me of significant stock/error events
+The machine emails designated operative(s) when:
+An item reaches a low stock level (configurable per item)
+An item goes out of stock
+The machine temperature goes above or below a (configurable) range
+The machine develops a fault

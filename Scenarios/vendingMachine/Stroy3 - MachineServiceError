@@ -1,0 +1,31 @@
+5. As a Service Operative, I want the machine to notify me of significant stock/error events
+- The machine emails designated operative(s) when:
+An item reaches a low stock level (configurable per item)
+An item goes out of stock
+The machine temperature goes above or below a (configurable) range
+The machine develops a fault
+
+//scenario outline test multiple test data variations with test data provided in example table
+Scenario outline: As a service operator to vending machine, able to know machine stock availability in machine
+Given snack vending machine is powered
+When snack 'item' have less than 'expected'
+Then snack machine should notify 'status' service operator via mail
+
+Example:
+|item|expected|status|
+
+//This scenario can be covered as part of above with relevant data in example table
+Scenario: As a service operator to vending machine, able to receive communication on out off stock for snacks
+Given snack vending machine is powered
+When snack 'item' listed is not available
+Then snack machine should notify out-off stock message to service operator via mail
+
+Scenario: As a service operator to vending machine, able to receive warning communication on machine operating temperature
+Given snack vending machine is powered
+When machine temperature goes 'above' or 'below' °C
+Then snack machine should notify priority warning message to service operator via mail
+
+Scenario: As a service operator to vending machine, able to receive warning communication on machine operating temperature
+Given snack vending machine is powered
+When machine not able to check operating temperature or dispense snack
+Then snack machine should notify priority error message to service operator via mail
